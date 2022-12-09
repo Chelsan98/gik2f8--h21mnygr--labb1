@@ -41,9 +41,9 @@ function renderBookList(bookList) {
      })
     }) 
     element.addEventListener("mouseout",()=> { // Ett litet problem här är att om man raderar det man har skrivit i sökfältet när rutan är uppe så stannar den kvar.
-     var test = document.querySelector('.hover')
-     if (test){
-      document.body.removeChild(test);
+     var removeBox = document.querySelector('.hover')
+     if (removeBox){
+      document.body.removeChild(removeBox);
      }
     })
   });
